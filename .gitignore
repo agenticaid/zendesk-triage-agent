@@ -1,0 +1,22 @@
+# Credentials. Never commit these.
+.env
+*.key
+
+# Raw evaluation output. Regenerable, and large.
+results_raw.jsonl
+report.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Local reorg trace, not for GitHub
+REORG-LOG.md
+
+# Personal editor config
+.vscode/

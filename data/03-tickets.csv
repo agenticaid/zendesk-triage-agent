@@ -1,0 +1,91 @@
+id,subject,body,ground_truth_category,ground_truth_action,note
+T001,cant get into my account,i changed to a new phone and now the game starts from zero. my village was level 47. i need my old account back please this is urgent,account_recovery,hard_stop,
+T002,LOST EVERYTHING,I UNINSTALLED BY MISTAKE AND NOW ITS ALL GONE 3 YEARS OF PLAYING PLEASE HELP ME GET IT BACK,account_recovery,hard_stop,"reads like progress_lost, is account_recovery"
+T003,login problem,Hello. I cannot log in since yesterday. It says account not found but I have been playing every day for two years with the same facebook.,account_recovery,hard_stop,
+T004,my brother account,"hi my brother gave me his account but now it asks for a code to his email and he moved abroad, can you just move it to my email",account_recovery,hard_stop,"classic social engineering shape, must never be auto answered"
+T005,account hacked,someone got into my account and changed the email. i still have the receipts from my purchases. please lock it and give it back to me,account_recovery,hard_stop,"also abuse-adjacent, still hard_stop"
+T006,Restore please,"New phone, old account gone. I have my player ID: 8842211. Please restore.",account_recovery,hard_stop,
+T007,cannot connect facebook,the facebook button does nothing and if i play as guest i get a new empty game. i dont want a new game i want mine,account_recovery,hard_stop,"looks like bug_report, is account_recovery"
+T008,help me,i forgot which google account i used and now i have 2 games. how do i get the good one back,account_recovery,hard_stop,
+T009,access denied to my own game,After the update it logged me out and none of my logins work. Two of my friends have the same problem. Please advise.,account_recovery,hard_stop,the 'friends too' detail tempts a bug classification
+T010,Old account,"Hello support, I played in 2023, stopped, came back now and it is a fresh start. Can you find my old save with my email?",account_recovery,hard_stop,
+T011,phone stolen,my phone was stolen last week. i have a new one now. how do i get my account so the thief doesnt have it,account_recovery,hard_stop,
+T012,wrong account loaded,opened the game on my ipad and it loaded my daughters game not mine. now on my phone it also shows hers. i want mine back,account_recovery,hard_stop,
+T013,id 99213 recovery,"player id 99213, cant access, email changed by someone. urgent",account_recovery,hard_stop,
+T014,Please transfer my progress,I want to move my progress from android to iphone but there is no option in the settings anymore. Where did it go?,account_recovery,hard_stop,could read as gameplay_question; account state change means hard_stop
+T015,paid but nothing arrived,"I bought the 19.99 chest 40 minutes ago, money is gone from my card, no coins in the game. Order GPA.3345-1122-9987-44521",purchase_missing,human_review,
+T016,spins not credited,"bought 3 spin packs during the event, only 2 arrived. same card same session",purchase_missing,human_review,
+T017,where are my coins,"paid 4.99 yesterday evening, still nothing. i restarted the game 10 times",purchase_missing,human_review,
+T018,Double charged,I was charged twice for the same pack. I only received one. Attaching nothing because your form would not let me.,refund_request,hard_stop,"LABEL CORRECTED 2026-09-09. Was purchase_missing/human_review. A double charge is a money problem and the ticket spans both categories, so rule 1 (most restrictive wins) makes it refund_request. The original label contradicted the project's own rule."
+T019,purchase pending forever,the purchase says pending in the game for 2 days. the bank shows it as completed.,purchase_missing,human_review,
+T020,no items after paying,Bought the starter bundle. Got the coins but not the pets. Half of it arrived.,purchase_missing,human_review,
+T021,MISSING PURCHASE,I PAID 49.99 AND GOT NOTHING THIS IS THEFT,purchase_missing,human_review,angry tone should not change the classification
+T022,payment went through no delivery,Apple receipt attached in the app. Nothing in game. Please deliver what I paid for.,purchase_missing,human_review,
+T023,event pack didnt come,i bought the event pack 10 minutes before the event ended and it never arrived and now the event is over. what happens with my money,refund_request,hard_stop,"LABEL CORRECTED 2026-09-08 during hand testing. Originally purchase_missing/human_review with the note 'the ask is still delivery'. That reading was wrong: the player states the event is over, so there is nothing left to deliver, and 'what happens with my money' is a money question. Spans purchase_missing as secondary."
+T024,coins missing after purchase,Purchased 2 hours ago. Coins appeared then disappeared after the app restarted.,progress_lost,human_review,"LABEL CORRECTED 2026-09-09. Was purchase_missing/human_review. The coins arrived and then disappeared, so the purchase was delivered and later lost. That is progress_lost by this file's own definition: currency disappeared while the player still has access. Action unchanged."
+T025,google play says purchased,Google Play order history shows it. The game does not. Who is right?,purchase_missing,human_review,
+T026,paid for vip no vip,"Subscribed to the monthly thing, charged, no VIP badge and no daily bonus.",purchase_missing,human_review,
+T027,3 packs 1 delivery,bought 3 got 1. order ids in the screenshot i tried to send,purchase_missing,human_review,
+T028,transaction not showing,My bank shows the charge as of this morning. The game shows no transaction. I would like the items.,purchase_missing,human_review,
+T029,refund please,"i want my money back for the pack i bought last night, it was a mistake and i regret it",refund_request,hard_stop,
+T030,my son spent 340 dollars,My 9 year old used my card in your game without permission. 340 dollars over two days. I need this reversed immediately.,refund_request,hard_stop,"minor spending, highest sensitivity ticket in the set"
+T031,cancel and refund,"Cancel my subscription and refund the last three months, I did not use it.",refund_request,hard_stop,
+T032,I want a chargeback,If you do not refund me I am going to my bank and to the app store. Last warning.,refund_request,hard_stop,
+T033,refund for undelivered pack,"I paid, it never arrived, at this point I do not want the items I want the money back.",refund_request,hard_stop,spans purchase_missing; most restrictive action wins
+T034,accidental purchase,my thumb hit the button during the animation. never wanted it. please reverse,refund_request,hard_stop,
+T035,money back,give me back my 99.99 the game is broken and i cannot even play what i paid for,refund_request,hard_stop,spans bug_report; most restrictive action wins
+T036,Refund request - duplicate charge,"Charged twice, only need one. Please refund the second charge.",refund_request,hard_stop,
+T037,not as described,"The pack said 10000 coins, I got 1000. I want a refund not a correction.",refund_request,hard_stop,
+T038,stop taking my money,cancel everything and return what you took this month,refund_request,hard_stop,
+T039,refund because of ban,I was banned for no reason so refund everything I ever spent.,refund_request,hard_stop,spans abuse/moderation; hard_stop either way
+T040,my village is gone,logged in this morning and my village 112 is back to village 1. everything gone. i did not uninstall anything,progress_lost,human_review,
+T041,level went backwards,"I was on level 88 last night, today I am on 61. Same phone, same account, did not touch anything.",progress_lost,human_review,
+T042,pets disappeared,All three of my pets are gone after the update this week. Coins are still there.,progress_lost,human_review,
+T043,cards collection reset,my whole card collection is empty. i had almost completed 2 sets,progress_lost,human_review,
+T044,lost progress after update,Updated to the new version and lost about two weeks of progress. Friends list is intact which is strange.,progress_lost,human_review,the intact friends list is the clue it may be a save issue not an account issue
+T045,spins reset to zero,"Had 4000 spins saved for the event. Opened the game, 12 spins.",progress_lost,human_review,
+T046,everything back to start,game opened as if i am new. tutorial and everything. but it knows my name,progress_lost,human_review,"very close to account_recovery, deliberately ambiguous"
+T047,missing shields,"I had 3 shields, got attacked once, lost all my stuff. Shields did nothing.",progress_lost,human_review,could be bug_report or gameplay misunderstanding
+T048,half my coins gone,"went to sleep with 40M coins, woke up with 18M. no raids on me overnight in the log",progress_lost,human_review,
+T049,village 200 gone,two years of work. village 200. gone. i want it back today.,progress_lost,human_review,
+T050,progress not syncing,My iPad shows village 60 and my phone shows village 44. Which one is real and can you sync them?,progress_lost,human_review,
+T051,items vanished,the items i won in the tournament never went into my inventory and now the tournament is closed,progress_lost,human_review,
+T052,rolled back,It looks like my account was rolled back about 5 days. Did something happen on your side?,progress_lost,human_review,
+T053,how do the events work,"Hi, can you explain how the team event scoring works? I do not understand why my points do not count.",gameplay_question,auto_draft,
+T054,when does the new season start,when is the next season starting? is there a schedule somewhere,gameplay_question,auto_draft,
+T055,what are pets for,i just unlocked a pet and i dont know what it does. what is the point of them,gameplay_question,auto_draft,
+T056,how to join a team,How do I join a team with my friends? I cannot find where to enter a code.,gameplay_question,auto_draft,
+T057,card trading rules,why can i only trade some cards and not the gold ones? is that a bug or a rule,gameplay_question,auto_draft,asks 'is it a bug' but it is a rules question
+T058,max village level,what is the highest village level in the game right now,gameplay_question,auto_draft,
+T059,how do i get more spins,are there ways to get spins without paying? my friend says there is a link thing,gameplay_question,auto_draft,
+T060,what does the shield do exactly,Does a shield protect me from raids or only from attacks? Nobody in my team agrees.,gameplay_question,auto_draft,
+T061,daily bonus timing,"At what time does the daily bonus reset? I am in Israel, is it my time or server time?",gameplay_question,auto_draft,
+T062,meaning of the symbols,There are two icons next to my name I have never seen. What do they mean?,gameplay_question,auto_draft,
+T063,how to change my name,can i change my display name and does it cost anything,gameplay_question,auto_draft,
+T064,friend invites not counting,"How many friends do I need to invite before I get the reward, and do they need to reach a certain level?",gameplay_question,auto_draft,
+T065,is there an offline mode,can i play without internet on a flight,gameplay_question,auto_draft,
+T066,what happens if i stop playing,If I do not open the game for a few months does the account get deleted?,gameplay_question,auto_draft,"note: an answer here touches account lifecycle, but it is informational"
+T067,game crashes on start,"The game crashes immediately on opening since the last update. Samsung S22, Android 14.",bug_report,auto_draft,
+T068,black screen,black screen after the loading bar reaches the end. tried reinstalling twice,bug_report,auto_draft,
+T069,spin button not working,the spin button is frozen. everything else in the menu works,bug_report,auto_draft,
+T070,game freezes during raid,Every time I raid the game freezes for 10 seconds then goes back to the map. iPhone 13.,bug_report,auto_draft,
+T071,sound not working,no sound at all even though it is on in settings and my phone is not muted,bug_report,auto_draft,
+T072,text overlapping,In Hebrew the text overlaps the buttons in the shop screen and I cannot read the prices.,bug_report,auto_draft,"localization bug, good example for the interview"
+T073,app very slow,game got really slow this week. 5 seconds between taps. it was fine before,bug_report,auto_draft,
+T074,cannot close popup,There is an event popup with no X button. I have to force close the app every time.,bug_report,auto_draft,
+T075,battery drain,"the game eats my battery, 30 percent in 20 minutes since the update",bug_report,auto_draft,
+T076,notifications not arriving,I turned notifications on but I never get the free spins reminder anymore.,bug_report,auto_draft,
+T077,wrong language,Game switched itself to Russian. I cannot find the language setting because it is in Russian.,bug_report,auto_draft,"KNOWN DISAGREEMENT, label unchanged. The model reads this as gameplay_question because the player's ask is where the setting is; the label says bug_report because the app changed its own language. Both defensible, both auto_draft, no routing consequence."
+T078,crash when opening cards,Opening the cards album crashes the app 100 percent of the time. Everything else works.,bug_report,auto_draft,
+T079,event timer wrong,The event timer says 4 hours left but the event ended 2 hours ago according to my team.,bug_report,auto_draft,
+T080,cannot connect error 502,getting connection error 502 for the last hour. wifi and mobile data both.,bug_report,auto_draft,
+T081,screen upside down,after i rotated my tablet the game is stuck sideways and will not rotate back,bug_report,auto_draft,
+T082,player is cheating,"There is someone in my team with impossible numbers, 400 million coins in one day. Please check them.",abuse_report,hard_stop,
+T083,harassment in team chat,A player in my team is sending abusive messages to everyone. I have screenshots. Username is in the screenshot.,abuse_report,hard_stop,
+T084,scam link,someone posted a link in the team chat promising free spins and two people in my team lost their accounts,abuse_report,hard_stop,overlaps account_recovery for the victims; still hard_stop
+T085,someone using my name,There is a player using my exact username and picture and messaging my friends asking for things.,abuse_report,hard_stop,
+T086,reporting a bot,this account plays 24 hours a day and never misses. it is a bot. i reported in the app 3 times and nothing happened,abuse_report,hard_stop,
+T087,inappropriate name,"A player has a very offensive username, my kid plays this game. Please do something.",abuse_report,hard_stop,"mentions a minor, sensitivity raised"
+T088,threats,Someone in the game is threatening me and says they know where I live.,abuse_report,hard_stop,"safety issue, never automate"
+T089,team leader abusing,our team leader kicks people who do not send him cards and then insults them,abuse_report,hard_stop,
+T090,selling accounts,There is a group selling accounts and using your game logo. I thought you should know.,abuse_report,hard_stop,

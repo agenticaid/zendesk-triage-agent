@@ -1,0 +1,9 @@
+.env
+.env.example
+*.key
+__pycache__/
+*.pyc
+.venv/
+venv/
+docs/
+*.jsonl
