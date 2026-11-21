@@ -2,6 +2,12 @@
 
 A triage system for a mobile game support queue. It reads an incoming Zendesk ticket, classifies it into one of seven categories, and routes it by risk: low-risk categories get a drafted reply for an agent to review, ambiguous ones are flagged for a human, and three categories are refused outright.
 
+## Demo
+
+![A new ticket is created in Zendesk and the agent adds tags, a triage note and a suggested reply](docs/demo.gif)
+
+*A new ticket arrives; the agent tags it, writes a triage note and posts a suggested reply as an internal note for a human to review. Shown at double speed. The full-quality recording is in [`/docs`](docs).*
+
 **All data here is synthetic.** 90 tickets written to resemble a free-to-play mobile game queue. There are no real players, no real purchases, and no real support organisation behind this. It was built in three days as a working demonstration.
 
 ## What it does
